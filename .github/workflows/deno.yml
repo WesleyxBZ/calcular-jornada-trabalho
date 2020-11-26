@@ -22,7 +22,7 @@ jobs:
         node-version: 12.14.1
 
     - name: Build
-      run: npm i && npx ng b --prod --base-href=/
+      run: npm i && npx ng b --prod --base-href=https://wesleyxbz.github.io/calcular-jornada-trabalho/
 
     - name: Deploy
       uses: JamesIves/github-pages-deploy-action@releases/v3
