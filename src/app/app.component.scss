@@ -1,0 +1,93 @@
+.container {
+  margin: 0 10%;
+}
+
+.title {
+  text-align: center;
+  margin-top: 1em;
+  font-size: 2em;
+}
+
+.main {
+  margin: 3rem 0;
+}
+
+.form-group {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.form-group__label {
+  margin-bottom: .5rem;
+  display: inline-block;
+  width: 100%;
+  color: #495057;
+}
+
+.form-group__input {
+  width: calc(100% - 1.5rem);
+  border: 1px solid #495057;
+  border-radius: .25rem;
+  padding: .375rem .75rem;
+}
+
+.form-group__button {
+  cursor: pointer;
+  width: 100%;
+  display: block;
+  margin-top: 2rem;
+  padding: 10px;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #007bff;
+  border: 0;
+  border-radius: .25rem;
+}
+
+.form-group__button:hover {
+  background-color: #0069d9;
+}
+
+.form-group__button:active {
+  background-color: #0062cc;
+  border-color: #005cbf;
+}
+
+.form-group__button:focus {
+  background-color: #0069d9;
+  border-color: #0062cc;
+  box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, .5);
+}
+
+.times {
+  margin: 3rem auto;
+  text-align: center;
+}
+
+.times__p {
+  margin: 1rem 0;
+}
+
+.times__p--total {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.times__separator {
+  margin: 1rem 0;
+  height: 1px;
+  background-color: #495057;
+}
+
+@media (min-width: 768px) {
+  .container {
+    margin: 0 20%;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    margin: 0 30%;
+  }
+}
