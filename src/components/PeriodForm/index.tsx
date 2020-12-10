@@ -63,7 +63,7 @@ const PeriodForm = () => {
                                id="end"/>
                     </div>
                     <div className="form-group">
-                        <button type="submit" className="form-group__button">Calcular</button>
+                        <button type="submit" className="form-group__button">Adicionar</button>
                     </div>
                 </form>
 
