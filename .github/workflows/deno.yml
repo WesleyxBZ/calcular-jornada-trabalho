@@ -9,6 +9,9 @@ jobs:
   build-and-deploy:
 
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [12.x]
 
     steps:
     - name: Checkout
@@ -16,10 +19,10 @@ jobs:
       with:
         persist-credentials: false
 
-    - name: Use Node.js 12.19.8
+    - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v1
       with:
-        node-version: 12.19.8
+        node-version: ${{ matrix.node-version }}
 
     - name: Build && deploy
       run: npm i && npm run build
