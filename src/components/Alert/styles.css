@@ -1,0 +1,26 @@
+.alert {
+    position: relative;
+    padding: 1rem 1rem;
+    margin-bottom: 3rem;
+    border: 1px solid #e4e6ef;
+    border-radius: 4px;
+    color: #3f4254;
+    background-color: #e4e6ef;
+    display: grid;
+}
+
+.alert > ul {
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.alert__separator {
+    margin: .5rem 0;
+    height: 1px;
+    background-color: #787878b8;
+}
+
+.alert__text {
+    text-align: center;
+    margin: .5em 0;
+}
