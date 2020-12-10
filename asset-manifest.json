@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.87224914.chunk.css",
-    "main.js": "/static/js/main.ea8341f4.chunk.js",
-    "main.js.map": "/static/js/main.ea8341f4.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.5b8e8817.js",
-    "runtime-main.js.map": "/static/js/runtime-main.5b8e8817.js.map",
-    "static/js/2.13ed5552.chunk.js": "/static/js/2.13ed5552.chunk.js",
-    "static/js/2.13ed5552.chunk.js.map": "/static/js/2.13ed5552.chunk.js.map",
-    "static/js/3.d7a00706.chunk.js": "/static/js/3.d7a00706.chunk.js",
-    "static/js/3.d7a00706.chunk.js.map": "/static/js/3.d7a00706.chunk.js.map",
-    "index.html": "/index.html",
-    "static/css/main.87224914.chunk.css.map": "/static/css/main.87224914.chunk.css.map",
-    "static/js/2.13ed5552.chunk.js.LICENSE.txt": "/static/js/2.13ed5552.chunk.js.LICENSE.txt"
+    "main.css": "/calcular-jornada-trabalho/static/css/main.87224914.chunk.css",
+    "main.js": "/calcular-jornada-trabalho/static/js/main.ea8341f4.chunk.js",
+    "main.js.map": "/calcular-jornada-trabalho/static/js/main.ea8341f4.chunk.js.map",
+    "runtime-main.js": "/calcular-jornada-trabalho/static/js/runtime-main.a1382119.js",
+    "runtime-main.js.map": "/calcular-jornada-trabalho/static/js/runtime-main.a1382119.js.map",
+    "static/js/2.13ed5552.chunk.js": "/calcular-jornada-trabalho/static/js/2.13ed5552.chunk.js",
+    "static/js/2.13ed5552.chunk.js.map": "/calcular-jornada-trabalho/static/js/2.13ed5552.chunk.js.map",
+    "static/js/3.d7a00706.chunk.js": "/calcular-jornada-trabalho/static/js/3.d7a00706.chunk.js",
+    "static/js/3.d7a00706.chunk.js.map": "/calcular-jornada-trabalho/static/js/3.d7a00706.chunk.js.map",
+    "index.html": "/calcular-jornada-trabalho/index.html",
+    "static/css/main.87224914.chunk.css.map": "/calcular-jornada-trabalho/static/css/main.87224914.chunk.css.map",
+    "static/js/2.13ed5552.chunk.js.LICENSE.txt": "/calcular-jornada-trabalho/static/js/2.13ed5552.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.5b8e8817.js",
+    "static/js/runtime-main.a1382119.js",
     "static/js/2.13ed5552.chunk.js",
     "static/css/main.87224914.chunk.css",
     "static/js/main.ea8341f4.chunk.js"
