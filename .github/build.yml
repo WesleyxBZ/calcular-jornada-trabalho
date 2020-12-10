@@ -24,13 +24,11 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
 
-    - name: Build && deploy
+    - name: Build
       run: npm i && npm run build
 
     - name: Deploy
-      uses: JamesIves/github-pages-deploy-action@releases/v3
+      uses: peaceiris/actions-gh-pages@v3
       with:
-        CLEAN: true
-        BRANCH: gh-pages
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        FOLDER: ./build
+        deploy_key: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./build
