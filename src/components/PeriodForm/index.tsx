@@ -52,6 +52,7 @@ const PeriodForm = () => {
                                type="time"
                                name="start"
                                onChange={handleInputChange}
+                               required
                                id="start"/>
                     </div>
                     <div className="form-group">
@@ -60,6 +61,7 @@ const PeriodForm = () => {
                                type="time"
                                name="end"
                                onChange={handleInputChange}
+                               required
                                id="end"/>
                     </div>
                     <div className="form-group">

@@ -9,17 +9,16 @@ interface PeriodsViewProps {
 const PeriodView: React.FC<PeriodsViewProps> = (props: PeriodsViewProps) => {
 
     const [periods, setPeriods] = useState<Period[]>([]);
-    const {newPeriod} = props;
 
     useEffect(() => {
-      if (newPeriod.start && newPeriod.end) {
-        const {start, end} = newPeriod;
-        const time = handleCalculateTime(end, start);
-        const result = new Date(0, 0, 0, time.getHours(), time.getMinutes(), 0);
-        const period: Period = {start, end, result};
-        setPeriods([...periods, period]);
-      }
-    }, [newPeriod]); // eslint-disable-line react-hooks/exhaustive-deps
+        const {start, end} = props.newPeriod;
+        if (start && end) {
+            const time = handleCalculateTime(end, start);
+            const result = new Date(0, 0, 0, time.getHours(), time.getMinutes(), 0);
+            const period: Period = {start, end, result};
+            setPeriods(oldPeriods => [...oldPeriods, period]);
+        }
+    }, [props.newPeriod]);
 
     function toTimeString(date: Date): string {
         return (date.getHours() > 9 ? date.getHours() : '0' + date.getHours())
