@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/calcular-jornada-trabalho/static/css/main.87224914.chunk.css",
-    "main.js": "/calcular-jornada-trabalho/static/js/main.870380d9.chunk.js",
-    "main.js.map": "/calcular-jornada-trabalho/static/js/main.870380d9.chunk.js.map",
+    "main.js": "/calcular-jornada-trabalho/static/js/main.f71ef1c3.chunk.js",
+    "main.js.map": "/calcular-jornada-trabalho/static/js/main.f71ef1c3.chunk.js.map",
     "runtime-main.js": "/calcular-jornada-trabalho/static/js/runtime-main.a1382119.js",
     "runtime-main.js.map": "/calcular-jornada-trabalho/static/js/runtime-main.a1382119.js.map",
     "static/js/2.13ed5552.chunk.js": "/calcular-jornada-trabalho/static/js/2.13ed5552.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.a1382119.js",
     "static/js/2.13ed5552.chunk.js",
     "static/css/main.87224914.chunk.css",
-    "static/js/main.870380d9.chunk.js"
+    "static/js/main.f71ef1c3.chunk.js"
   ]
 }
