@@ -1,22 +1,20 @@
 {
   "files": {
-    "main.css": "/calcular-jornada-trabalho/static/css/main.87224914.chunk.css",
-    "main.js": "/calcular-jornada-trabalho/static/js/main.132539e4.chunk.js",
-    "main.js.map": "/calcular-jornada-trabalho/static/js/main.132539e4.chunk.js.map",
-    "runtime-main.js": "/calcular-jornada-trabalho/static/js/runtime-main.a1382119.js",
-    "runtime-main.js.map": "/calcular-jornada-trabalho/static/js/runtime-main.a1382119.js.map",
-    "static/js/2.13ed5552.chunk.js": "/calcular-jornada-trabalho/static/js/2.13ed5552.chunk.js",
-    "static/js/2.13ed5552.chunk.js.map": "/calcular-jornada-trabalho/static/js/2.13ed5552.chunk.js.map",
-    "static/js/3.d7a00706.chunk.js": "/calcular-jornada-trabalho/static/js/3.d7a00706.chunk.js",
-    "static/js/3.d7a00706.chunk.js.map": "/calcular-jornada-trabalho/static/js/3.d7a00706.chunk.js.map",
+    "main.css": "/calcular-jornada-trabalho/static/css/main.e6fdb5f0.chunk.css",
+    "main.js": "/calcular-jornada-trabalho/static/js/main.233a93bf.chunk.js",
+    "main.js.map": "/calcular-jornada-trabalho/static/js/main.233a93bf.chunk.js.map",
+    "runtime-main.js": "/calcular-jornada-trabalho/static/js/runtime-main.f0fc1f4b.js",
+    "runtime-main.js.map": "/calcular-jornada-trabalho/static/js/runtime-main.f0fc1f4b.js.map",
+    "static/js/2.173f8bcf.chunk.js": "/calcular-jornada-trabalho/static/js/2.173f8bcf.chunk.js",
+    "static/js/2.173f8bcf.chunk.js.map": "/calcular-jornada-trabalho/static/js/2.173f8bcf.chunk.js.map",
     "index.html": "/calcular-jornada-trabalho/index.html",
-    "static/css/main.87224914.chunk.css.map": "/calcular-jornada-trabalho/static/css/main.87224914.chunk.css.map",
-    "static/js/2.13ed5552.chunk.js.LICENSE.txt": "/calcular-jornada-trabalho/static/js/2.13ed5552.chunk.js.LICENSE.txt"
+    "static/css/main.e6fdb5f0.chunk.css.map": "/calcular-jornada-trabalho/static/css/main.e6fdb5f0.chunk.css.map",
+    "static/js/2.173f8bcf.chunk.js.LICENSE.txt": "/calcular-jornada-trabalho/static/js/2.173f8bcf.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.a1382119.js",
-    "static/js/2.13ed5552.chunk.js",
-    "static/css/main.87224914.chunk.css",
-    "static/js/main.132539e4.chunk.js"
+    "static/js/runtime-main.f0fc1f4b.js",
+    "static/js/2.173f8bcf.chunk.js",
+    "static/css/main.e6fdb5f0.chunk.css",
+    "static/js/main.233a93bf.chunk.js"
   ]
 }
