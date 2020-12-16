@@ -14,10 +14,22 @@ Exemplo, inserido os tempos:
 
 A saída total = 08:30 horas
 
+<br>
+
+## :books: Tecnologias utilizadas
+
+- React
+- Typescript
+- Redux
+
+<br>
+
 ## :eyes: Testar/Usar a aplicação
 [Acesso pelo github pages](https://wesleyxbz.github.io/calcular-jornada-trabalho/).
 
 Não esqueça de dar :star: Star se gostou.
+
+<br>
 
 ## :construction_worker: Como executar
 
