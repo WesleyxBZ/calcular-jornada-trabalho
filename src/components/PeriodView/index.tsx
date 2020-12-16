@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, {FC, useEffect, useState} from 'react';
 import './styles.css';
 import {Period} from '../../core/Period';
 
@@ -6,18 +6,17 @@ interface PeriodsViewProps {
     newPeriod: Period;
 }
 
-const PeriodView: React.FC<PeriodsViewProps> = (props: PeriodsViewProps) => {
+const PeriodView: FC<PeriodsViewProps> = (props: PeriodsViewProps) => {
 
     const [periods, setPeriods] = useState<Period[]>([]);
 
     useEffect(() => {
         const {start, end} = props.newPeriod;
-        if (start && end) {
-            const time = handleCalculateTime(end, start);
-            const result = new Date(0, 0, 0, time.getHours(), time.getMinutes(), 0);
-            const period: Period = {start, end, result};
-            setPeriods(oldPeriods => [...oldPeriods, period]);
-        }
+        if (!start && !end) return;
+        const time = handleCalculateTime(end, start);
+        const result = new Date(0, 0, 0, time.getHours(), time.getMinutes(), 0);
+        const period: Period = {start, end, result};
+        setPeriods(oldPeriods => [...oldPeriods, period]);
     }, [props.newPeriod]);
 
     function toTimeString(date: Date): string {
