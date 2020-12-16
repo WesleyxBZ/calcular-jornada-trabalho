@@ -3,7 +3,7 @@ import './styles.css';
 import {Period} from '../../core/Period';
 import Alert from '../../shared/Alert';
 import {useDispatch} from 'react-redux';
-import {formTimeActions} from '../../store/FormTime/FormTime.actions';
+import {formTimeActions} from '../../store/ducks/formTime';
 
 const PeriodForm = () => {
 
