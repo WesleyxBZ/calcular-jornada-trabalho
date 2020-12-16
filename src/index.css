@@ -3,3 +3,19 @@ body {
   padding: 0;
   font-family: 'Roboto Light', sans-serif;
 }
+
+.container {
+    margin: 3em 15%;
+}
+
+@media (min-width: 768px) {
+    .container {
+        margin: 3em 25%;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        margin: 3em 35%;
+    }
+}

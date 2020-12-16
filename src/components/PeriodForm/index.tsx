@@ -1,12 +1,13 @@
 import React, {ChangeEvent, FormEvent, useState} from 'react';
 import './styles.css';
 import {Period} from '../../core/Period';
-import Alert from '../Alert';
-import PeriodView from '../PeriodView';
+import Alert from '../../shared/Alert';
+import {useDispatch} from 'react-redux';
+import {formTimeActions} from '../../store/FormTime/FormTime.actions';
 
 const PeriodForm = () => {
 
-    const [period, setPeriod] = useState<Period>({} as Period);
+    const dispatch = useDispatch();
     const [formData, setFormData] = useState<Period>({} as Period);
 
     function handleInputChange(event: ChangeEvent<HTMLInputElement>): void {
@@ -22,7 +23,7 @@ const PeriodForm = () => {
         if (start && end) {
             const result = new Date(0, 0, 0, 0, 0, 0);
             const period: Period = {start, end, result};
-            setPeriod(period);
+            dispatch(formTimeActions(period));
             handleFormClear();
         }
     }
@@ -40,38 +41,34 @@ const PeriodForm = () => {
     }
 
     return (
-        <div>
-            <div className="container">
+        <div className="container">
 
-                <Alert/>
+            <Alert/>
 
-                <form id="formData" onSubmit={handleSubmit}>
-                    <div className="form-group">
-                        <label className="form-group__label">Início</label>
-                        <input className="form-group__input"
-                               type="time"
-                               name="start"
-                               onChange={handleInputChange}
-                               required
-                               id="start"/>
-                    </div>
-                    <div className="form-group">
-                        <label className="form-group__label">Fim</label>
-                        <input className="form-group__input"
-                               type="time"
-                               name="end"
-                               onChange={handleInputChange}
-                               required
-                               id="end"/>
-                    </div>
-                    <div className="form-group">
-                        <button type="submit" className="form-group__button">Adicionar</button>
-                    </div>
-                </form>
+            <form id="formData" onSubmit={handleSubmit}>
+                <div className="form-group">
+                    <label className="form-group__label">Início</label>
+                    <input className="form-group__input"
+                           type="time"
+                           name="start"
+                           onChange={handleInputChange}
+                           required
+                           id="start"/>
+                </div>
+                <div className="form-group">
+                    <label className="form-group__label">Fim</label>
+                    <input className="form-group__input"
+                           type="time"
+                           name="end"
+                           onChange={handleInputChange}
+                           required
+                           id="end"/>
+                </div>
+                <div className="form-group">
+                    <button type="submit" className="form-group__button">Adicionar</button>
+                </div>
+            </form>
 
-                <PeriodView newPeriod={period}/>
-
-            </div>
         </div>
     );
 

@@ -1,9 +1,5 @@
-.times {
-    margin: 3rem auto;
-    text-align: center;
-}
-
 .times__text {
+    text-align: center;
     margin: 1rem 0;
     color: #212529;
 }

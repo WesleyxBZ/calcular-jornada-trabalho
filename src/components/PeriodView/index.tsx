@@ -1,23 +1,22 @@
-import React, {FC, useEffect, useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import './styles.css';
 import {Period} from '../../core/Period';
+import {useSelector} from 'react-redux';
+import {RootState} from '../../store/store';
 
-interface PeriodsViewProps {
-    newPeriod: Period;
-}
+const PeriodView = () => {
 
-const PeriodView: FC<PeriodsViewProps> = (props: PeriodsViewProps) => {
-
+    const newPeriod = useSelector((state: RootState) => state.formTime);
     const [periods, setPeriods] = useState<Period[]>([]);
 
     useEffect(() => {
-        const {start, end} = props.newPeriod;
-        if (!start && !end) return;
+        if (!newPeriod?.start || !newPeriod?.end) return;
+        const {start, end} = newPeriod;
         const time = handleCalculateTime(end, start);
         const result = new Date(0, 0, 0, time.getHours(), time.getMinutes(), 0);
         const period: Period = {start, end, result};
         setPeriods(oldPeriods => [...oldPeriods, period]);
-    }, [props.newPeriod]);
+    }, [newPeriod]);
 
     function toTimeString(date: Date): string {
         return (date.getHours() > 9 ? date.getHours() : '0' + date.getHours())
@@ -51,7 +50,7 @@ const PeriodView: FC<PeriodsViewProps> = (props: PeriodsViewProps) => {
     }
 
     return (
-        <div className="times">
+        <div className="container">
 
             {
                 periods.length > 0
